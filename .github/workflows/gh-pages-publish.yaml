@@ -1,0 +1,15 @@
+name: publish page to gh-pages
+on:
+  push:
+      branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on:  [ default, amd64 ]
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        folder: .
