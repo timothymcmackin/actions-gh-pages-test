@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   publish:
-    runs-on:  [ default, amd64 ]
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
